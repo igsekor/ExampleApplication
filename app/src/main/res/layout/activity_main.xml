@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/colorPrimary">
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/default_view_height"
+        android:padding="@dimen/default_container_padding"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="vertical"
+        android:background="@color/colorPrimaryDark">
+        
+        <EditText
+            android:id="@+id/main_login_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/default_view_height"
+            android:textSize="@dimen/default_text_size"
+            android:padding="@dimen/default_space_between_views"
+            android:hint="@string/user_name_hint"
+            android:background="@color/background_textedit" />
+
+        <EditText
+            android:id="@+id/main_password_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/default_view_height"
+            android:layout_marginTop="@dimen/default_margin_top"
+            android:padding="@dimen/default_space_between_views"
+            android:inputType="textPassword"
+            android:textSize="@dimen/default_text_size"
+            android:hint="@string/password_hint"
+            android:background="#fff"
+            tools:ignore="TextViewEdits"/>
+        
+        <Button
+            android:id="@+id/main_login_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/default_margin_top"
+            android:gravity="center"
+            android:text="@string/login_button_text"/>
+            
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

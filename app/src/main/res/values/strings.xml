@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="user_name_hint">User name</string>
+    <string name="password_hint">Password</string>
+    <string name="login_button_text">Login</string>
+    <string name="login_alert_dialog_title">Authorization</string>
+    <string name="login_alert_dialog_message">There are wrong username or password! Do you remember the password?</string>
+</resources>
